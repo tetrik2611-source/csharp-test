@@ -1,0 +1,30 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #edf3ff, #f8f9fc);
+  color: #202938;
+  font-family: Arial, sans-serif;
+}
+.test-card {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e7ebf2;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(30, 50, 90, .08);
+}
+.answer-button {
+  text-align: left;
+  white-space: normal;
+  padding: 12px 16px;
+}
+.answer-button:disabled { opacity: 1; }
+.answer-button.correct { background: #d1e7dd; border-color: #198754; color: #0f5132; }
+.answer-button.wrong { background: #f8d7da; border-color: #dc3545; color: #842029; }
+#timer { font-variant-numeric: tabular-nums; }
+#status { white-space: normal; }
+@media (max-width: 576px) {
+  .test-card { padding: 20px 16px; }
+  .test-card h1 { font-size: 1.55rem; }
+}
